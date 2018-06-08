@@ -111,6 +111,7 @@ class Environment(object):
 
         # Reset status text
         self.step_data = {}
+
         # Reset traffic lights
         for traffic_light in self.intersections.itervalues():
             traffic_light.reset()
@@ -204,6 +205,7 @@ class Environment(object):
             # Agent has taken an action: reduce the deadline by 1
             agent_deadline = self.agent_states[self.primary_agent]['deadline'] - 1
             self.agent_states[self.primary_agent]['deadline'] = agent_deadline
+
             if agent_deadline <= self.hard_time_limit:
                 self.done = True
                 self.success = False
@@ -260,7 +262,7 @@ class Environment(object):
     def act(self, agent, action):
         """ Consider an action and perform the action if it is legal.
             Receive a reward for the agent based on traffic laws. """
-        
+
         assert agent in self.agent_states, "Unknown agent!"
         assert action in self.valid_actions, "Invalid action!"
 
