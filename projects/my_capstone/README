@@ -1,0 +1,35 @@
+The code is written in python 3
+Libraries required:
+numpy
+pandas
+scikit learn
+seaborn
+matplot.pyplotlib
+
+Folder structure:
+/
+app_settings.py (configuration parameters)
+....data (folder)
+....data/*.csv input and output files
+data_analysis.py (implements the regression models)
+data_exploration.py (generates plots for data exploration)
+....data_proc (folder)
+....data_proc/*.py (class files for processing raw data)
+generate_train_test_set.py (Generates training and test datasets from curated data)
+main_app.py (main program)
+prepare_data.py (processes raw data)
+readme.txt (this file)
+....Utils (folder for utility modules)
+....Utils/plots.py (functions to generate various kinds of plots)
+....Reports (the proposal and project report)
+....Reports/*.pdf
+
+HOW TO RUN
+-----------
+Unzip the files into a folder.
+activate the environment that has all the required libraries
+cd to the folder and run this command:
+python main_app.py
+
+Result file will have the final output form the models and will be created in the main folder:
+result.txt

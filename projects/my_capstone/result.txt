@@ -1,0 +1,1232 @@
+Summary for Wheat train data
+------------------------
+shape: (481, 31)
+number of countries: 43
+Feature importance for Wheat yield:
+['5_10h:0.97', '10_20h:0.93', 'C:0.91', 'L_AL:0.91', '2_5h:0.91', 'W:0.89', 'Trk:0.87', 'Wkr:0.85', '1_2h:0.84', 'lt_1h:0.79', '20_50h:0.77', '50_1hh:0.70', 'L_PC:0.69', 'gt_1hh:0.66', 'L_EI:0.64', 'F_N:0.55', 'F_P:0.38', 'F_K:0.24']
+
+
+
+Summary for Rice train data
+------------------------
+shape: (324, 31)
+number of countries: 29
+Feature importance for Rice yield:
+['5_10h:1.03', 'C:1.02', 'Trk:0.99', 'L_EI:0.97', '10_20h:0.96', 'L_AL:0.92', 'W:0.89', '2_5h:0.88', 'Wkr:0.87', 'lt_1h:0.85', '20_50h:0.83', '1_2h:0.81', 'F_N:0.75', '50_1hh:0.74', 'L_PC:0.71', 'F_P:0.57', 'gt_1hh:0.54', 'F_K:0.46']
+
+
+
+Summary for Onion train data
+------------------------
+shape: (481, 31)
+number of countries: 43
+Feature importance for Onion yield:
+['2_5h:1.37', '5_10h:1.30', '1_2h:1.27', 'Trk:1.20', 'C:1.17', '10_20h:1.15', 'lt_1h:1.15', 'Wkr:1.07', 'L_EI:1.06', 'L_AL:1.05', 'W:1.04', '20_50h:1.02', 'L_PC:0.90', '50_1hh:0.84', 'F_N:0.58', 'gt_1hh:0.58', 'F_P:0.46', 'F_K:0.40']
+
+
+
+Metrics for Wheat (LR)
+------------------------
+coeff: [  191.77191675   -18.94717352   -45.97370957  -124.19553991  -888.85422672
+   -20.46603146  -156.11203924  -917.46817273  -223.6522683    -94.87298122
+   311.83915799  -995.28820173   447.47230821 -1270.37673317  3745.77818824
+ -1920.89947      278.12735198     7.75865367]
+intercept: 52260.58798150718
+r squared test: 0.77
+r squared train: 0.79
+RMSE test : 10386.63
+RMSE test  (% of average yield): 29.05
+RMSE train: 9354.93
+RMSE train (% of average yield): 27.18
+RMAE test : 7788.31
+RMAE test  (% of average yield): 21.78
+RMAE train: 7253.27
+RMAE train (% of average yield): 21.07
+
+
+
+Metrics for Rice (LR)
+------------------------
+coeff: [  134.85921421   -55.27650624   -95.79855212    92.91920121   174.36429753
+   -33.70005254    55.27997492 -3635.18224991   -26.72012845  -229.7806006
+  -139.76765294   134.75674951   346.01385657  1110.61459082 -3358.38116939
+  2163.26435449 -1941.22125025    43.40001938]
+intercept: 25632.23174361372
+r squared test: 0.77
+r squared train: 0.78
+RMSE test : 9319.70
+RMSE test  (% of average yield): 23.55
+RMSE train: 9300.15
+RMSE train (% of average yield): 23.19
+RMAE test : 7931.48
+RMAE test  (% of average yield): 20.05
+RMAE train: 7419.44
+RMAE train (% of average yield): 18.50
+
+
+
+Metrics for Onion (LR)
+------------------------
+coeff: [   606.84003359    -67.28566057    138.21942596    -88.51407527
+     84.88947779  -1175.69679982   1500.99914682 -19697.34566865
+  -1528.28059799  -3174.0235924   -2770.90687319   3908.07115553
+  -7415.34900567   1923.19671401   8307.00337143    750.28882829
+ -48820.16214572    106.61629296]
+intercept: 298564.8303429748
+r squared test: 0.70
+r squared train: 0.71
+RMSE test : 77475.78
+RMSE test  (% of average yield): 31.97
+RMSE train: 73743.76
+RMSE train (% of average yield): 31.70
+RMAE test : 63746.68
+RMAE test  (% of average yield): 26.30
+RMAE train: 60008.81
+RMAE train (% of average yield): 25.80
+
+
+
+Metrics for Wheat (LR-Normalize)
+------------------------
+coeff: [  191.77191675   -18.94717352   -45.97370957  -124.19553991  -888.85422672
+   -20.46603146  -156.11203924  -917.46817273   -63.78423905    64.99504804
+   471.70718725  -835.42017248   607.34033747 -1110.50870392  3905.6462175
+ -1761.03144074   278.12735198     7.75865367]
+intercept: 36273.78505565523
+r squared test: 0.77
+r squared train: 0.79
+RMSE test : 10386.63
+RMSE test  (% of average yield): 29.05
+RMSE train: 9354.93
+RMSE train (% of average yield): 27.18
+RMAE test : 7788.31
+RMAE test  (% of average yield): 21.78
+RMAE train: 7253.27
+RMAE train (% of average yield): 21.07
+
+
+
+Metrics for Rice (LR-Normalize)
+------------------------
+coeff: [  134.85921421   -55.27650624   -95.79855212    92.91920121   174.36429753
+   -33.70005254    55.27997492 -3635.18224992    -7.74096224  -210.80143439
+  -120.78848673   153.73591572   364.99302278  1129.59375703 -3339.40200318
+  2182.2435207  -1941.22125025    43.40001938]
+intercept: 23734.315122635413
+r squared test: 0.77
+r squared train: 0.78
+RMSE test : 9319.70
+RMSE test  (% of average yield): 23.55
+RMSE train: 9300.15
+RMSE train (% of average yield): 23.19
+RMAE test : 7931.48
+RMAE test  (% of average yield): 20.05
+RMAE train: 7419.44
+RMAE train (% of average yield): 18.50
+
+
+
+Metrics for Onion (LR-Normalize)
+------------------------
+coeff: [   606.84003359    -67.28566057    138.21942596    -88.51407527
+     84.88947779  -1175.69679982   1500.99914682 -19697.34566865
+    -70.1013069   -1715.84430132  -1312.72758211   5366.25044661
+  -5957.16971459   3381.37600509   9765.18266252   2208.46811937
+ -48820.16214572    106.61629296]
+intercept: 152746.90123442258
+r squared test: 0.70
+r squared train: 0.71
+RMSE test : 77475.78
+RMSE test  (% of average yield): 31.97
+RMSE train: 73743.76
+RMSE train (% of average yield): 31.70
+RMAE test : 63746.68
+RMAE test  (% of average yield): 26.30
+RMAE train: 60008.81
+RMAE train (% of average yield): 25.80
+
+
+
+Metrics for Wheat (LR-Standardized)
+------------------------
+coeff: [  9993.09534613   -732.04641995  -1872.91795647  -3167.74582044
+  -6007.72350397   -235.75374129  -5433.31086096  -1829.05335395
+  -1919.77960405    626.96291348   7065.28767916  -5677.16653135
+   5007.32956198 -10801.35799016  19667.33032256  -9455.83592905
+    201.50577468   3890.09092116]
+intercept: 34417.85031185032
+r squared test: 0.77
+r squared train: 0.79
+RMSE test : 10348.79
+RMSE test  (% of average yield): 28.94
+RMSE train: 9354.93
+RMSE train (% of average yield): 27.18
+RMAE test : 7648.16
+RMAE test  (% of average yield): 21.39
+RMAE train: 7253.27
+RMAE train (% of average yield): 21.07
+
+
+
+Metrics for Rice (LR-Standardized)
+------------------------
+coeff: [  5561.58929445  -1066.48985774  -2252.57410188   2121.16218909
+   1787.43534578   -468.17154334   1610.51505479  -1553.7367148
+   -227.88836734  -2137.90585079  -2197.7061353     997.65421026
+   1875.26702293   7418.40565046 -14605.89448112  12130.74976439
+  -1793.0572943   12157.36445164]
+intercept: 40101.06481481482
+r squared test: 0.76
+r squared train: 0.78
+RMSE test : 9554.24
+RMSE test  (% of average yield): 24.15
+RMSE train: 9300.15
+RMSE train (% of average yield): 23.19
+RMAE test : 8032.74
+RMAE test  (% of average yield): 20.30
+RMAE train: 7419.44
+RMAE train (% of average yield): 18.50
+
+
+
+Metrics for Onion (LR-Standardized)
+------------------------
+coeff: [ 32433.22087852  -2648.02172487   5959.22437004  -2207.01721902
+    800.11933559 -14417.68950615  52752.83026859 -41770.89693072
+  -2102.97504108 -16308.93893547 -21337.14541386  35273.03263349
+ -44344.91872988  33229.00576886  51414.11577993  12066.09521217
+ -37633.54953818  50893.37131737]
+intercept: 232604.69646569644
+r squared test: 0.69
+r squared train: 0.71
+RMSE test : 79382.82
+RMSE test  (% of average yield): 32.75
+RMSE train: 73743.76
+RMSE train (% of average yield): 31.70
+RMAE test : 64056.44
+RMAE test  (% of average yield): 26.43
+RMAE train: 60008.81
+RMAE train (% of average yield): 25.80
+
+
+
+Metrics for Wheat (RF-n_est=6 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4311.71
+RMSE test  (% of average yield): 12.06
+RMSE train: 2445.59
+RMSE train (% of average yield): 7.11
+RMAE test : 2993.08
+RMAE test  (% of average yield): 8.37
+RMAE train: 1492.56
+RMAE train (% of average yield): 4.34
+Feature importance:
+['gt_1hh', 'F_P', '10_20h', '2_5h', 'Trk', '5_10h', 'F_K', 'L_AL', 'L_EI', '50_1hh', 'C', 'W', 'lt_1h', '1_2h', 'Wkr', 'L_PC', 'F_N', '20_50h']
+
+
+
+Metrics for Rice (RF-n_est=6 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3975.30
+RMSE test  (% of average yield): 10.05
+RMSE train: 1788.22
+RMSE train (% of average yield): 4.46
+RMAE test : 2931.02
+RMAE test  (% of average yield): 7.41
+RMAE train: 1144.80
+RMAE train (% of average yield): 2.85
+Feature importance:
+['50_1hh', 'Wkr', '5_10h', '2_5h', 'gt_1hh', 'lt_1h', 'W', 'C', '10_20h', 'F_P', '20_50h', 'F_K', 'L_PC', 'L_AL', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=6 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 43247.53
+RMSE test  (% of average yield): 17.84
+RMSE train: 16596.97
+RMSE train (% of average yield): 7.14
+RMAE test : 26655.00
+RMAE test  (% of average yield): 11.00
+RMAE train: 9337.59
+RMAE train (% of average yield): 4.01
+Feature importance:
+['Wkr', 'C', '2_5h', '5_10h', '1_2h', 'F_K', 'L_AL', 'F_P', 'lt_1h', 'W', '10_20h', 'F_N', 'Trk', 'L_PC', 'L_EI', 'gt_1hh', '50_1hh', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=8 mse)
+------------------------
+r squared test: 0.97
+r squared train: 0.99
+RMSE test : 4003.92
+RMSE test  (% of average yield): 11.20
+RMSE train: 2329.85
+RMSE train (% of average yield): 6.77
+RMAE test : 2880.36
+RMAE test  (% of average yield): 8.06
+RMAE train: 1541.80
+RMAE train (% of average yield): 4.48
+Feature importance:
+['10_20h', 'gt_1hh', '2_5h', 'L_AL', 'F_P', 'F_K', '5_10h', 'L_EI', 'Trk', 'C', '1_2h', '50_1hh', 'lt_1h', 'W', 'Wkr', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=8 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3903.35
+RMSE test  (% of average yield): 9.87
+RMSE train: 1812.83
+RMSE train (% of average yield): 4.52
+RMAE test : 2792.04
+RMAE test  (% of average yield): 7.06
+RMAE train: 1169.75
+RMAE train (% of average yield): 2.92
+Feature importance:
+['50_1hh', '2_5h', 'gt_1hh', 'lt_1h', '5_10h', 'Wkr', 'C', 'F_K', '20_50h', 'F_P', '10_20h', 'W', 'L_PC', '1_2h', 'L_AL', 'F_N', 'L_EI', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=8 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 42506.36
+RMSE test  (% of average yield): 17.54
+RMSE train: 15183.62
+RMSE train (% of average yield): 6.53
+RMAE test : 26789.71
+RMAE test  (% of average yield): 11.05
+RMAE train: 9167.90
+RMAE train (% of average yield): 3.94
+Feature importance:
+['C', '5_10h', 'lt_1h', 'gt_1hh', 'Wkr', '2_5h', 'F_K', 'F_P', '1_2h', 'Trk', '10_20h', 'W', 'L_AL', 'F_N', 'L_PC', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=10 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4495.34
+RMSE test  (% of average yield): 12.57
+RMSE train: 2482.92
+RMSE train (% of average yield): 7.21
+RMAE test : 3326.39
+RMAE test  (% of average yield): 9.30
+RMAE train: 1603.13
+RMAE train (% of average yield): 4.66
+Feature importance:
+['gt_1hh', 'Trk', '10_20h', '2_5h', 'F_K', 'F_P', '5_10h', 'L_EI', 'L_AL', '50_1hh', 'C', 'lt_1h', 'W', '1_2h', 'Wkr', 'L_PC', 'F_N', '20_50h']
+
+
+
+Metrics for Rice (RF-n_est=10 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4209.12
+RMSE test  (% of average yield): 10.64
+RMSE train: 1726.02
+RMSE train (% of average yield): 4.30
+RMAE test : 3079.45
+RMAE test  (% of average yield): 7.78
+RMAE train: 1137.85
+RMAE train (% of average yield): 2.84
+Feature importance:
+['5_10h', '50_1hh', 'lt_1h', '2_5h', 'C', 'Wkr', '10_20h', 'gt_1hh', 'W', '20_50h', 'F_K', 'F_P', 'L_AL', 'L_PC', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=10 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 42717.03
+RMSE test  (% of average yield): 17.62
+RMSE train: 15628.41
+RMSE train (% of average yield): 6.72
+RMAE test : 26970.65
+RMAE test  (% of average yield): 11.13
+RMAE train: 9244.46
+RMAE train (% of average yield): 3.97
+Feature importance:
+['lt_1h', 'Wkr', '5_10h', 'C', '1_2h', 'F_K', 'F_P', '2_5h', 'W', '10_20h', 'L_AL', 'F_N', 'Trk', 'L_PC', 'gt_1hh', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=12 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.98
+RMSE test : 4926.75
+RMSE test  (% of average yield): 13.78
+RMSE train: 2544.60
+RMSE train (% of average yield): 7.39
+RMAE test : 3532.94
+RMAE test  (% of average yield): 9.88
+RMAE train: 1574.58
+RMAE train (% of average yield): 4.57
+Feature importance:
+['2_5h', '5_10h', 'C', 'Trk', 'F_P', 'F_K', 'gt_1hh', '10_20h', 'L_EI', 'L_AL', '1_2h', '50_1hh', 'W', 'lt_1h', '20_50h', 'Wkr', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=12 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4270.45
+RMSE test  (% of average yield): 10.79
+RMSE train: 2004.47
+RMSE train (% of average yield): 5.00
+RMAE test : 3000.80
+RMAE test  (% of average yield): 7.58
+RMAE train: 1149.36
+RMAE train (% of average yield): 2.87
+Feature importance:
+['5_10h', '50_1hh', '2_5h', 'gt_1hh', 'W', 'Wkr', '20_50h', '10_20h', 'F_P', 'lt_1h', 'L_PC', 'F_K', 'C', '1_2h', 'L_AL', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=12 mse)
+------------------------
+r squared test: 0.90
+r squared train: 0.99
+RMSE test : 43971.64
+RMSE test  (% of average yield): 18.14
+RMSE train: 15277.80
+RMSE train (% of average yield): 6.57
+RMAE test : 27420.50
+RMAE test  (% of average yield): 11.31
+RMAE train: 8980.33
+RMAE train (% of average yield): 3.86
+Feature importance:
+['5_10h', 'C', '2_5h', 'Wkr', 'gt_1hh', '1_2h', 'lt_1h', 'F_P', 'W', 'F_K', '10_20h', 'Trk', 'L_AL', 'F_N', 'L_PC', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=16 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4258.16
+RMSE test  (% of average yield): 11.91
+RMSE train: 2330.96
+RMSE train (% of average yield): 6.77
+RMAE test : 2926.18
+RMAE test  (% of average yield): 8.18
+RMAE train: 1531.94
+RMAE train (% of average yield): 4.45
+Feature importance:
+['gt_1hh', '10_20h', 'Trk', '2_5h', 'F_P', '5_10h', 'L_EI', 'L_AL', 'F_K', 'C', '1_2h', '50_1hh', 'Wkr', '20_50h', 'L_PC', 'W', 'lt_1h', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=16 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4163.99
+RMSE test  (% of average yield): 10.52
+RMSE train: 1976.68
+RMSE train (% of average yield): 4.93
+RMAE test : 3032.47
+RMAE test  (% of average yield): 7.66
+RMAE train: 1218.94
+RMAE train (% of average yield): 3.04
+Feature importance:
+['Wkr', '50_1hh', '5_10h', '2_5h', 'lt_1h', 'gt_1hh', 'C', 'F_P', 'W', '10_20h', 'F_K', '20_50h', 'L_AL', 'L_PC', '1_2h', 'F_N', 'L_EI', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=16 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 42556.69
+RMSE test  (% of average yield): 17.56
+RMSE train: 16162.26
+RMSE train (% of average yield): 6.95
+RMAE test : 25516.97
+RMAE test  (% of average yield): 10.53
+RMAE train: 9610.68
+RMAE train (% of average yield): 4.13
+Feature importance:
+['C', '5_10h', 'Wkr', '2_5h', 'F_K', 'F_P', '1_2h', 'lt_1h', 'W', '10_20h', 'Trk', 'L_AL', 'gt_1hh', 'F_N', 'L_PC', '50_1hh', 'L_EI', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=20 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.98
+RMSE test : 4338.76
+RMSE test  (% of average yield): 12.13
+RMSE train: 2612.61
+RMSE train (% of average yield): 7.59
+RMAE test : 3079.73
+RMAE test  (% of average yield): 8.61
+RMAE train: 1586.43
+RMAE train (% of average yield): 4.61
+Feature importance:
+['10_20h', 'F_P', '5_10h', 'lt_1h', 'Trk', '2_5h', 'gt_1hh', 'L_AL', 'F_K', 'L_EI', 'W', 'C', '1_2h', '50_1hh', 'Wkr', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=20 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3777.86
+RMSE test  (% of average yield): 9.55
+RMSE train: 1888.03
+RMSE train (% of average yield): 4.71
+RMAE test : 2697.83
+RMAE test  (% of average yield): 6.82
+RMAE train: 1206.28
+RMAE train (% of average yield): 3.01
+Feature importance:
+['5_10h', '2_5h', '50_1hh', 'lt_1h', '20_50h', 'gt_1hh', 'W', 'F_K', 'F_P', 'Wkr', 'L_PC', 'C', '10_20h', 'L_AL', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=20 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 43000.40
+RMSE test  (% of average yield): 17.74
+RMSE train: 15587.97
+RMSE train (% of average yield): 6.70
+RMAE test : 26573.33
+RMAE test  (% of average yield): 10.96
+RMAE train: 9159.96
+RMAE train (% of average yield): 3.94
+Feature importance:
+['10_20h', 'lt_1h', '5_10h', '1_2h', '2_5h', 'Wkr', 'C', 'F_K', 'W', 'F_P', 'Trk', 'L_AL', 'F_N', 'L_PC', 'gt_1hh', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=25 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4596.97
+RMSE test  (% of average yield): 12.86
+RMSE train: 2309.40
+RMSE train (% of average yield): 6.71
+RMAE test : 3227.68
+RMAE test  (% of average yield): 9.03
+RMAE train: 1455.87
+RMAE train (% of average yield): 4.23
+Feature importance:
+['gt_1hh', 'L_AL', 'F_P', '2_5h', '1_2h', '10_20h', '5_10h', 'L_EI', 'F_K', 'Trk', 'C', '50_1hh', 'Wkr', '20_50h', 'lt_1h', 'W', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=25 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4034.03
+RMSE test  (% of average yield): 10.20
+RMSE train: 1974.58
+RMSE train (% of average yield): 4.92
+RMAE test : 2888.90
+RMAE test  (% of average yield): 7.30
+RMAE train: 1191.94
+RMAE train (% of average yield): 2.97
+Feature importance:
+['5_10h', '50_1hh', '2_5h', 'gt_1hh', 'Wkr', 'W', 'lt_1h', '10_20h', 'F_K', '20_50h', 'C', 'F_P', 'L_PC', 'L_AL', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=25 mse)
+------------------------
+r squared test: 0.92
+r squared train: 0.99
+RMSE test : 40810.11
+RMSE test  (% of average yield): 16.84
+RMSE train: 14834.05
+RMSE train (% of average yield): 6.38
+RMAE test : 24984.75
+RMAE test  (% of average yield): 10.31
+RMAE train: 8936.64
+RMAE train (% of average yield): 3.84
+Feature importance:
+['Wkr', 'C', 'lt_1h', '5_10h', '2_5h', 'F_K', '1_2h', 'W', '10_20h', 'F_P', 'L_AL', 'F_N', 'Trk', 'L_PC', 'L_EI', 'gt_1hh', '50_1hh', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=30 mse)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4649.02
+RMSE test  (% of average yield): 13.00
+RMSE train: 2308.36
+RMSE train (% of average yield): 6.71
+RMAE test : 3318.00
+RMAE test  (% of average yield): 9.28
+RMAE train: 1556.09
+RMAE train (% of average yield): 4.52
+Feature importance:
+['10_20h', '2_5h', 'gt_1hh', 'F_P', '5_10h', 'F_K', 'L_EI', 'W', 'Trk', 'C', 'L_AL', '50_1hh', '1_2h', 'Wkr', 'lt_1h', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=30 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4086.86
+RMSE test  (% of average yield): 10.33
+RMSE train: 1766.12
+RMSE train (% of average yield): 4.40
+RMAE test : 2897.23
+RMAE test  (% of average yield): 7.32
+RMAE train: 1179.96
+RMAE train (% of average yield): 2.94
+Feature importance:
+['50_1hh', 'gt_1hh', 'Wkr', 'lt_1h', '5_10h', '10_20h', '2_5h', 'F_P', '20_50h', 'W', 'C', 'F_K', 'L_AL', 'L_PC', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=30 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 43854.56
+RMSE test  (% of average yield): 18.09
+RMSE train: 15004.12
+RMSE train (% of average yield): 6.45
+RMAE test : 27112.21
+RMAE test  (% of average yield): 11.19
+RMAE train: 8834.09
+RMAE train (% of average yield): 3.80
+Feature importance:
+['10_20h', 'C', 'Wkr', 'F_K', '5_10h', '2_5h', '1_2h', 'F_P', 'lt_1h', 'W', 'L_AL', 'F_N', 'Trk', 'L_PC', '20_50h', 'L_EI', 'gt_1hh', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=35 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4365.70
+RMSE test  (% of average yield): 12.21
+RMSE train: 2470.88
+RMSE train (% of average yield): 7.18
+RMAE test : 3086.26
+RMAE test  (% of average yield): 8.63
+RMAE train: 1542.22
+RMAE train (% of average yield): 4.48
+Feature importance:
+['Trk', 'gt_1hh', '10_20h', '2_5h', 'L_EI', 'F_P', 'F_K', 'C', '5_10h', 'L_AL', '1_2h', '50_1hh', '20_50h', 'Wkr', 'lt_1h', 'W', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=35 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4020.57
+RMSE test  (% of average yield): 10.16
+RMSE train: 1918.48
+RMSE train (% of average yield): 4.78
+RMAE test : 2906.90
+RMAE test  (% of average yield): 7.35
+RMAE train: 1214.75
+RMAE train (% of average yield): 3.03
+Feature importance:
+['5_10h', '50_1hh', '2_5h', 'Wkr', 'lt_1h', 'gt_1hh', 'C', '10_20h', 'W', '20_50h', 'F_P', 'L_PC', 'L_AL', 'F_K', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=35 mse)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 42977.42
+RMSE test  (% of average yield): 17.73
+RMSE train: 15633.67
+RMSE train (% of average yield): 6.72
+RMAE test : 26586.96
+RMAE test  (% of average yield): 10.97
+RMAE train: 9129.60
+RMAE train (% of average yield): 3.92
+Feature importance:
+['10_20h', 'C', 'Wkr', 'lt_1h', '1_2h', '5_10h', 'F_K', 'F_P', 'W', '2_5h', 'Trk', 'L_AL', 'F_N', 'L_PC', 'gt_1hh', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=40 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4345.03
+RMSE test  (% of average yield): 12.15
+RMSE train: 2308.63
+RMSE train (% of average yield): 6.71
+RMAE test : 3117.81
+RMAE test  (% of average yield): 8.72
+RMAE train: 1498.63
+RMAE train (% of average yield): 4.35
+Feature importance:
+['2_5h', '50_1hh', 'L_EI', 'F_P', '10_20h', 'gt_1hh', 'F_K', '5_10h', '1_2h', 'L_AL', 'Trk', 'C', 'W', 'Wkr', 'L_PC', 'lt_1h', '20_50h', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=40 mse)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4028.53
+RMSE test  (% of average yield): 10.18
+RMSE train: 1892.65
+RMSE train (% of average yield): 4.72
+RMAE test : 2999.42
+RMAE test  (% of average yield): 7.58
+RMAE train: 1218.42
+RMAE train (% of average yield): 3.04
+Feature importance:
+['50_1hh', '5_10h', '2_5h', 'Wkr', '20_50h', '10_20h', 'gt_1hh', 'lt_1h', 'W', 'L_PC', 'C', 'F_P', 'L_AL', 'F_K', 'L_EI', '1_2h', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=40 mse)
+------------------------
+r squared test: 0.92
+r squared train: 0.99
+RMSE test : 41060.92
+RMSE test  (% of average yield): 16.94
+RMSE train: 15379.41
+RMSE train (% of average yield): 6.61
+RMAE test : 26411.41
+RMAE test  (% of average yield): 10.90
+RMAE train: 8520.25
+RMAE train (% of average yield): 3.66
+Feature importance:
+['C', 'Wkr', '5_10h', '10_20h', 'W', 'F_K', '2_5h', 'lt_1h', '1_2h', 'F_P', 'L_AL', 'Trk', 'F_N', 'L_PC', 'gt_1hh', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=6 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4166.92
+RMSE test  (% of average yield): 11.65
+RMSE train: 2378.52
+RMSE train (% of average yield): 6.91
+RMAE test : 3037.85
+RMAE test  (% of average yield): 8.50
+RMAE train: 1500.48
+RMAE train (% of average yield): 4.36
+Feature importance:
+['Trk', 'gt_1hh', '2_5h', 'F_P', 'F_K', '5_10h', '10_20h', 'L_EI', 'L_AL', '50_1hh', '1_2h', 'C', 'lt_1h', 'Wkr', 'L_PC', 'W', 'F_N', '20_50h']
+
+
+
+Metrics for Rice (RF-n_est=6 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4108.91
+RMSE test  (% of average yield): 10.38
+RMSE train: 1907.42
+RMSE train (% of average yield): 4.76
+RMAE test : 2947.49
+RMAE test  (% of average yield): 7.45
+RMAE train: 1119.31
+RMAE train (% of average yield): 2.79
+Feature importance:
+['5_10h', 'Wkr', '50_1hh', 'lt_1h', '2_5h', 'W', 'F_P', 'C', 'gt_1hh', '10_20h', '20_50h', 'L_PC', 'L_AL', 'F_K', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=6 mae)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 43706.26
+RMSE test  (% of average yield): 18.03
+RMSE train: 16361.83
+RMSE train (% of average yield): 7.03
+RMAE test : 27482.54
+RMAE test  (% of average yield): 11.34
+RMAE train: 9242.61
+RMAE train (% of average yield): 3.97
+Feature importance:
+['10_20h', 'C', 'lt_1h', 'Wkr', '5_10h', 'F_P', 'W', '2_5h', '1_2h', 'F_K', 'Trk', 'L_AL', 'gt_1hh', 'F_N', 'L_PC', 'L_EI', '50_1hh', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=8 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.98
+RMSE test : 4324.56
+RMSE test  (% of average yield): 12.09
+RMSE train: 2540.96
+RMSE train (% of average yield): 7.38
+RMAE test : 3084.13
+RMAE test  (% of average yield): 8.63
+RMAE train: 1538.93
+RMAE train (% of average yield): 4.47
+Feature importance:
+['10_20h', 'L_EI', 'gt_1hh', 'F_K', 'F_P', '2_5h', 'Trk', 'L_AL', 'C', '5_10h', '50_1hh', '1_2h', 'W', '20_50h', 'Wkr', 'L_PC', 'lt_1h', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=8 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3896.95
+RMSE test  (% of average yield): 9.85
+RMSE train: 1985.41
+RMSE train (% of average yield): 4.95
+RMAE test : 2833.64
+RMAE test  (% of average yield): 7.16
+RMAE train: 1146.56
+RMAE train (% of average yield): 2.86
+Feature importance:
+['5_10h', '50_1hh', '2_5h', 'lt_1h', 'C', 'W', 'gt_1hh', 'Wkr', '20_50h', 'F_P', '10_20h', 'L_PC', 'L_AL', 'F_K', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=8 mae)
+------------------------
+r squared test: 0.90
+r squared train: 0.99
+RMSE test : 44746.42
+RMSE test  (% of average yield): 18.46
+RMSE train: 14966.29
+RMSE train (% of average yield): 6.43
+RMAE test : 29284.96
+RMAE test  (% of average yield): 12.08
+RMAE train: 8803.30
+RMAE train (% of average yield): 3.78
+Feature importance:
+['Wkr', '5_10h', '2_5h', 'lt_1h', '10_20h', 'F_K', 'F_P', 'W', 'C', '1_2h', 'L_AL', 'F_N', 'L_PC', 'Trk', '50_1hh', 'L_EI', '20_50h', 'gt_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=10 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4106.92
+RMSE test  (% of average yield): 11.49
+RMSE train: 2272.90
+RMSE train (% of average yield): 6.60
+RMAE test : 3003.50
+RMAE test  (% of average yield): 8.40
+RMAE train: 1526.18
+RMAE train (% of average yield): 4.43
+Feature importance:
+['gt_1hh', '5_10h', '10_20h', '2_5h', 'F_P', 'Trk', 'F_K', 'L_EI', 'L_AL', 'W', '50_1hh', 'C', 'lt_1h', '1_2h', 'Wkr', 'L_PC', 'F_N', '20_50h']
+
+
+
+Metrics for Rice (RF-n_est=10 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4012.69
+RMSE test  (% of average yield): 10.14
+RMSE train: 1905.96
+RMSE train (% of average yield): 4.75
+RMAE test : 2819.99
+RMAE test  (% of average yield): 7.13
+RMAE train: 1203.94
+RMAE train (% of average yield): 3.00
+Feature importance:
+['50_1hh', '5_10h', 'lt_1h', '20_50h', '2_5h', 'Wkr', 'C', 'W', 'gt_1hh', 'F_K', '10_20h', 'F_P', 'L_PC', 'L_AL', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=10 mae)
+------------------------
+r squared test: 0.91
+r squared train: 0.98
+RMSE test : 42594.18
+RMSE test  (% of average yield): 17.57
+RMSE train: 16935.41
+RMSE train (% of average yield): 7.28
+RMAE test : 27791.34
+RMAE test  (% of average yield): 11.47
+RMAE train: 9072.52
+RMAE train (% of average yield): 3.90
+Feature importance:
+['C', 'Wkr', 'gt_1hh', 'lt_1h', '5_10h', '2_5h', '10_20h', 'F_K', '1_2h', 'Trk', 'F_P', 'W', 'L_AL', 'F_N', 'L_PC', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=12 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4362.44
+RMSE test  (% of average yield): 12.20
+RMSE train: 2380.59
+RMSE train (% of average yield): 6.92
+RMAE test : 3110.06
+RMAE test  (% of average yield): 8.70
+RMAE train: 1515.39
+RMAE train (% of average yield): 4.40
+Feature importance:
+['10_20h', '2_5h', '5_10h', 'gt_1hh', 'lt_1h', 'Trk', 'L_AL', 'F_K', 'L_EI', 'F_P', '50_1hh', 'C', '1_2h', 'Wkr', 'W', 'F_N', 'L_PC', '20_50h']
+
+
+
+Metrics for Rice (RF-n_est=12 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3864.34
+RMSE test  (% of average yield): 9.77
+RMSE train: 1979.06
+RMSE train (% of average yield): 4.94
+RMAE test : 2824.70
+RMAE test  (% of average yield): 7.14
+RMAE train: 1221.31
+RMAE train (% of average yield): 3.05
+Feature importance:
+['50_1hh', 'Wkr', '2_5h', '20_50h', '5_10h', 'lt_1h', 'W', 'gt_1hh', '10_20h', 'F_P', 'C', 'L_AL', 'L_PC', 'F_K', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=12 mae)
+------------------------
+r squared test: 0.92
+r squared train: 0.99
+RMSE test : 40810.94
+RMSE test  (% of average yield): 16.84
+RMSE train: 16237.04
+RMSE train (% of average yield): 6.98
+RMAE test : 24355.87
+RMAE test  (% of average yield): 10.05
+RMAE train: 9591.49
+RMAE train (% of average yield): 4.12
+Feature importance:
+['2_5h', 'lt_1h', 'C', 'F_K', 'Wkr', '1_2h', '5_10h', 'W', 'F_P', '10_20h', 'Trk', 'L_AL', 'F_N', 'gt_1hh', 'L_PC', 'L_EI', '50_1hh', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=16 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4374.75
+RMSE test  (% of average yield): 12.23
+RMSE train: 2172.15
+RMSE train (% of average yield): 6.31
+RMAE test : 3111.05
+RMAE test  (% of average yield): 8.70
+RMAE train: 1493.32
+RMAE train (% of average yield): 4.34
+Feature importance:
+['gt_1hh', '10_20h', '5_10h', 'F_P', 'Trk', 'L_EI', 'F_K', 'C', 'L_AL', '2_5h', '1_2h', '50_1hh', 'lt_1h', 'Wkr', 'W', 'L_PC', '20_50h', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=16 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4045.65
+RMSE test  (% of average yield): 10.22
+RMSE train: 1793.11
+RMSE train (% of average yield): 4.47
+RMAE test : 2917.29
+RMAE test  (% of average yield): 7.37
+RMAE train: 1133.16
+RMAE train (% of average yield): 2.83
+Feature importance:
+['50_1hh', '2_5h', '5_10h', 'gt_1hh', 'Wkr', 'lt_1h', 'C', 'F_P', 'W', '10_20h', 'F_K', '1_2h', 'L_PC', '20_50h', 'L_AL', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=16 mae)
+------------------------
+r squared test: 0.91
+r squared train: 0.98
+RMSE test : 42814.39
+RMSE test  (% of average yield): 17.66
+RMSE train: 17171.53
+RMSE train (% of average yield): 7.38
+RMAE test : 27744.23
+RMAE test  (% of average yield): 11.45
+RMAE train: 9567.62
+RMAE train (% of average yield): 4.11
+Feature importance:
+['C', 'Wkr', '5_10h', 'lt_1h', 'F_K', '1_2h', '2_5h', 'W', '10_20h', 'F_P', 'Trk', 'L_AL', 'gt_1hh', 'F_N', 'L_PC', 'L_EI', '50_1hh', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=20 mae)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4886.60
+RMSE test  (% of average yield): 13.67
+RMSE train: 2294.95
+RMSE train (% of average yield): 6.67
+RMAE test : 3340.07
+RMAE test  (% of average yield): 9.34
+RMAE train: 1533.38
+RMAE train (% of average yield): 4.46
+Feature importance:
+['10_20h', 'gt_1hh', '2_5h', 'L_EI', '5_10h', 'F_K', 'F_P', 'Trk', 'L_AL', 'C', '1_2h', 'lt_1h', 'W', '50_1hh', '20_50h', 'Wkr', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=20 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3891.89
+RMSE test  (% of average yield): 9.84
+RMSE train: 1712.71
+RMSE train (% of average yield): 4.27
+RMAE test : 2754.73
+RMAE test  (% of average yield): 6.96
+RMAE train: 1075.07
+RMAE train (% of average yield): 2.68
+Feature importance:
+['50_1hh', '5_10h', '2_5h', '10_20h', 'gt_1hh', 'Wkr', 'lt_1h', 'W', 'F_K', '20_50h', 'C', 'L_PC', 'F_P', 'L_AL', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=20 mae)
+------------------------
+r squared test: 0.91
+r squared train: 0.99
+RMSE test : 42045.77
+RMSE test  (% of average yield): 17.35
+RMSE train: 15841.69
+RMSE train (% of average yield): 6.81
+RMAE test : 26119.45
+RMAE test  (% of average yield): 10.78
+RMAE train: 9012.72
+RMAE train (% of average yield): 3.87
+Feature importance:
+['Trk', '2_5h', 'C', '5_10h', 'Wkr', 'F_P', 'lt_1h', 'F_K', '1_2h', 'W', '10_20h', 'F_N', 'gt_1hh', 'L_AL', 'L_PC', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=25 mae)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4859.54
+RMSE test  (% of average yield): 13.59
+RMSE train: 2481.76
+RMSE train (% of average yield): 7.21
+RMAE test : 3394.60
+RMAE test  (% of average yield): 9.49
+RMAE train: 1548.37
+RMAE train (% of average yield): 4.50
+Feature importance:
+['gt_1hh', '10_20h', '2_5h', '5_10h', 'Trk', 'F_P', 'F_K', 'L_AL', 'L_EI', '50_1hh', 'C', '1_2h', 'lt_1h', 'W', 'Wkr', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=25 mae)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4299.73
+RMSE test  (% of average yield): 10.87
+RMSE train: 1846.51
+RMSE train (% of average yield): 4.60
+RMAE test : 2953.35
+RMAE test  (% of average yield): 7.46
+RMAE train: 1117.79
+RMAE train (% of average yield): 2.79
+Feature importance:
+['50_1hh', 'gt_1hh', '2_5h', '5_10h', 'Wkr', 'lt_1h', 'F_P', 'C', 'W', '10_20h', '1_2h', '20_50h', 'L_AL', 'L_PC', 'F_K', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=25 mae)
+------------------------
+r squared test: 0.92
+r squared train: 0.98
+RMSE test : 40734.81
+RMSE test  (% of average yield): 16.81
+RMSE train: 16981.06
+RMSE train (% of average yield): 7.30
+RMAE test : 26642.00
+RMAE test  (% of average yield): 10.99
+RMAE train: 9780.36
+RMAE train (% of average yield): 4.20
+Feature importance:
+['Wkr', 'C', 'lt_1h', '2_5h', 'F_K', '5_10h', 'F_P', '1_2h', 'W', '10_20h', 'Trk', 'L_AL', 'F_N', 'L_PC', 'gt_1hh', '50_1hh', 'L_EI', '20_50h']
+
+
+
+Metrics for Wheat (RF-n_est=30 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4159.58
+RMSE test  (% of average yield): 11.63
+RMSE train: 2282.24
+RMSE train (% of average yield): 6.63
+RMAE test : 2941.71
+RMAE test  (% of average yield): 8.23
+RMAE train: 1471.38
+RMAE train (% of average yield): 4.28
+Feature importance:
+['10_20h', '5_10h', '2_5h', 'gt_1hh', 'F_P', 'L_EI', 'F_K', 'Trk', 'C', 'L_AL', '50_1hh', '1_2h', 'lt_1h', 'W', 'Wkr', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=30 mae)
+------------------------
+r squared test: 0.95
+r squared train: 0.99
+RMSE test : 4394.99
+RMSE test  (% of average yield): 11.11
+RMSE train: 1798.92
+RMSE train (% of average yield): 4.49
+RMAE test : 3139.39
+RMAE test  (% of average yield): 7.93
+RMAE train: 1157.99
+RMAE train (% of average yield): 2.89
+Feature importance:
+['50_1hh', 'Wkr', '5_10h', 'gt_1hh', '2_5h', '10_20h', 'lt_1h', 'W', 'F_P', 'F_K', 'C', '20_50h', '1_2h', 'L_PC', 'L_AL', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=30 mae)
+------------------------
+r squared test: 0.90
+r squared train: 0.99
+RMSE test : 44979.21
+RMSE test  (% of average yield): 18.56
+RMSE train: 16072.99
+RMSE train (% of average yield): 6.91
+RMAE test : 28822.33
+RMAE test  (% of average yield): 11.89
+RMAE train: 8967.99
+RMAE train (% of average yield): 3.86
+Feature importance:
+['C', '2_5h', '5_10h', 'Wkr', 'W', '1_2h', 'F_P', 'F_K', 'lt_1h', '10_20h', 'Trk', 'gt_1hh', 'L_AL', 'F_N', 'L_PC', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=35 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4283.32
+RMSE test  (% of average yield): 11.98
+RMSE train: 2381.87
+RMSE train (% of average yield): 6.92
+RMAE test : 3022.98
+RMAE test  (% of average yield): 8.45
+RMAE train: 1538.35
+RMAE train (% of average yield): 4.47
+Feature importance:
+['gt_1hh', 'F_P', '2_5h', '5_10h', '10_20h', 'L_EI', 'L_AL', 'F_K', 'C', 'Trk', '1_2h', '50_1hh', '20_50h', 'Wkr', 'lt_1h', 'W', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=35 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 4134.05
+RMSE test  (% of average yield): 10.45
+RMSE train: 2032.60
+RMSE train (% of average yield): 5.07
+RMAE test : 2921.94
+RMAE test  (% of average yield): 7.38
+RMAE train: 1261.00
+RMAE train (% of average yield): 3.14
+Feature importance:
+['50_1hh', '2_5h', '5_10h', 'W', '20_50h', 'lt_1h', 'Wkr', 'gt_1hh', 'C', '10_20h', 'L_AL', 'F_P', 'F_K', 'L_PC', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=35 mae)
+------------------------
+r squared test: 0.92
+r squared train: 0.99
+RMSE test : 39548.41
+RMSE test  (% of average yield): 16.32
+RMSE train: 14600.33
+RMSE train (% of average yield): 6.28
+RMAE test : 24799.70
+RMAE test  (% of average yield): 10.23
+RMAE train: 8646.70
+RMAE train (% of average yield): 3.72
+Feature importance:
+['5_10h', 'Wkr', '10_20h', '2_5h', 'C', 'F_P', 'F_K', 'lt_1h', '1_2h', 'W', 'L_AL', 'Trk', 'F_N', 'L_PC', 'gt_1hh', 'L_EI', '20_50h', '50_1hh']
+
+
+
+Metrics for Wheat (RF-n_est=40 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.98
+RMSE test : 4223.23
+RMSE test  (% of average yield): 11.81
+RMSE train: 2684.02
+RMSE train (% of average yield): 7.80
+RMAE test : 3079.07
+RMAE test  (% of average yield): 8.61
+RMAE train: 1597.21
+RMAE train (% of average yield): 4.64
+Feature importance:
+['2_5h', '10_20h', '5_10h', 'gt_1hh', 'Trk', 'L_EI', 'F_P', 'L_AL', 'F_K', 'C', '50_1hh', '1_2h', 'Wkr', 'lt_1h', 'W', '20_50h', 'L_PC', 'F_N']
+
+
+
+Metrics for Rice (RF-n_est=40 mae)
+------------------------
+r squared test: 0.96
+r squared train: 0.99
+RMSE test : 3985.53
+RMSE test  (% of average yield): 10.07
+RMSE train: 1988.28
+RMSE train (% of average yield): 4.96
+RMAE test : 2745.27
+RMAE test  (% of average yield): 6.94
+RMAE train: 1205.30
+RMAE train (% of average yield): 3.01
+Feature importance:
+['50_1hh', '2_5h', 'lt_1h', 'gt_1hh', '5_10h', 'Wkr', '10_20h', 'F_P', 'W', 'F_K', '20_50h', 'L_PC', 'L_AL', 'C', '1_2h', 'L_EI', 'F_N', 'Trk']
+
+
+
+Metrics for Onion (RF-n_est=40 mae)
+------------------------
+r squared test: 0.93
+r squared train: 0.99
+RMSE test : 38552.17
+RMSE test  (% of average yield): 15.91
+RMSE train: 15986.70
+RMSE train (% of average yield): 6.87
+RMAE test : 24703.95
+RMAE test  (% of average yield): 10.19
+RMAE train: 8850.31
+RMAE train (% of average yield): 3.80
+Feature importance:
+['C', 'lt_1h', '5_10h', '2_5h', 'Wkr', 'F_K', 'W', 'F_P', '1_2h', '10_20h', 'L_AL', 'Trk', 'F_N', 'L_PC', 'gt_1hh', 'L_EI', '50_1hh', '20_50h']
+
+
+
